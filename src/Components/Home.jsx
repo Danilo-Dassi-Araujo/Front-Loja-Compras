@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../Images/carrinhoLogo.svg"; // Substitua pelo caminho correto para o logo da loja
+import logo from "../Images/pirataIcon.svg"; // Substitua pelo caminho correto para o logo da loja
 import cartIcon from "../Images/carrinhoLogo.svg"; // Substitua pelo caminho correto para o ícone do carrinho
 import { Link } from "react-router-dom"; // Certifique-se de configurar suas rotas adequadamente
 import "../Styles/Home.css";
