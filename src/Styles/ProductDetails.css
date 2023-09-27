@@ -1,0 +1,82 @@
+/* Arquivo de estilos CSS */
+
+/* Estilo para a página de detalhes do produto */
+.product-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo para o nome do produto */
+  .product-detail h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* Estilo para a descrição do produto */
+  .product-detail p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para o preço do produto */
+  .product-detail p.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Cor azul para o preço */
+  }
+  
+  /* Estilo para a avaliação do produto */
+  .product-detail p.rating {
+    font-size: 16px;
+    color: #f39c12; /* Cor laranja para a avaliação */
+  }
+  
+  /* Estilo para o carrossel de imagens */
+  .slick-slider {
+    margin-top: 20px;
+  }
+  
+  /* Estilo para as imagens no carrossel */
+  .slick-slider img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para o botão de compra */
+  .buy-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745; /* Cor verde para o botão */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para o botão de compra desabilitado */
+  .buy-button:disabled {
+    background-color: #ccc; /* Cor cinza para o botão desabilitado */
+    cursor: not-allowed;
+  }
+  
+  /* Estilo para os pontos de navegação do carrossel */
+  .slick-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para os pontos de navegação ativos */
+  .slick-dots li.slick-active button:before {
+    color: #007bff; /* Cor azul para os pontos ativos */
+  }
+  
+  /* Estilo para os pontos de navegação inativos */
+  .slick-dots li button:before {
+    color: #ccc; /* Cor cinza para os pontos inativos */
+  }
+  

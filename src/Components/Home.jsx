@@ -13,35 +13,36 @@ function Home() {
       id: 1,
       name: "Produto 1",
       price: 19.99,
-      image: "product1.jpg", // Substitua pelo caminho correto para a imagem do produto
+      image: "https://a-static.mlcdn.com.br/450x450/cinzeiro-de-mesa-caveira-pirata-willy-caolho-versare-anos-dourados/versareanosdourados/423401/efe241438946a711cf22cac84449b76e.jpeg", // Substitua pelo caminho correto para a imagem do produto
     },
     {
       id: 2,
       name: "Produto 2",
       price: 29.99,
-      image: "product2.jpg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVjbsLfVMezKvsUFxP2pmEb0OnzasfH-_h5w&usqp=CAU",
     },
     // Adicione mais produtos conforme necessário
   ];
 
   return (
     <div>
-      <header>
-        <img width = "100" src={logo} alt="Logo da Loja" />
-        <div>
-          <Link to="" className="linkToLogin">Faça seu login / Cadastre-se</Link>
-          <img width = "100" src={cartIcon} alt="Carrinho de Compras" />
+      <header className="header">
+        <img width = "70" src={logo} alt="Logo da Loja" />
+        <div className="divHeader">
+          <Link to="" className="linkToLogin">Faça seu login</Link>
+          <Link to="" className="linkToLogin"> Cadastre-se</Link>
+          <img width = "50" src={cartIcon} alt="Carrinho de Compras" />
         </div>
       </header>
-      <main>
-        <h1>Produtos Disponíveis</h1>
+      <main className="sectionHero">
+        <h1 className="title">Produtos Disponíveis</h1>
         <div className="product-list">
           {products.map((product) => (
             <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} />
+              <img width="150" src={product.image} alt={product.name} />
               <h2>{product.name}</h2>
               <p>Preço: R$ {product.price.toFixed(2)}</p>
-              <Link to={`/product/${product.id}`}>Detalhes</Link>
+              <Link to={`/product`}>Detalhes</Link>
             </div>
           ))}
         </div>

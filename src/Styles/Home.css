@@ -8,3 +8,38 @@
     text-decoration: none;
     color: #000;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 120px;
+    text-align: center;
+}
+
+.divHeader{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.sectionHero{
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.product-list{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
+}
+
+.product-card{
+    padding: 50px;
+    background-color: #606361;
+}
